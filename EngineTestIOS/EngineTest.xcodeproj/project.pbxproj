@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300FDCFD17B1315000F05A7A /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300FDCFA17B1312C00F05A7A /* libOGLES2Tools.a */; };
 		303AEC3917AF7FFB0023B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3817AF7FFB0023B060 /* UIKit.framework */; };
 		303AEC3B17AF7FFB0023B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3A17AF7FFB0023B060 /* Foundation.framework */; };
 		303AEC3D17AF7FFB0023B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3C17AF7FFB0023B060 /* CoreGraphics.framework */; };
@@ -38,10 +39,23 @@
 		305CF37317B10FEA006346C1 /* WithTwoLights.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36517B10FEA006346C1 /* WithTwoLights.fs */; };
 		305CF37417B10FEA006346C1 /* WithTwoLights.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36617B10FEA006346C1 /* WithTwoLights.vs */; };
 		305CF37617B113FE006346C1 /* libEngineLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CF35617B10D00006346C1 /* libEngineLib.a */; };
-		305CF40517B115AB006346C1 /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CF40217B11574006346C1 /* libOGLES2Tools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		300FDCF917B1312C00F05A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300FDCF517B1312600F05A7A /* OGLES2Tools.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = F8748A3A0FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
+		300FDCFB17B1313D00F05A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300FDCF517B1312600F05A7A /* OGLES2Tools.xcode */;
+			proxyType = 1;
+			remoteGlobalIDString = F8748A390FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
 		305CF35517B10D00006346C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */;
@@ -56,23 +70,10 @@
 			remoteGlobalIDString = 303AEC6E17AF80300023B060;
 			remoteInfo = EngineLib;
 		};
-		305CF40117B11574006346C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
-			proxyType = 2;
-			remoteGlobalIDString = F8748A3A0FF221480052D400;
-			remoteInfo = OGLES2Tools;
-		};
-		305CF40317B115A0006346C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
-			proxyType = 1;
-			remoteGlobalIDString = F8748A390FF221480052D400;
-			remoteInfo = OGLES2Tools;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		300FDCF517B1312600F05A7A /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = ../../../sdk/PowerVR/GraphicsSDK/SDK_3.1/Tools/OGLES2/Build/iOS/OGLES2Tools.xcode; sourceTree = "<group>"; };
 		303AEC3517AF7FFB0023B060 /* EngineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303AEC3817AF7FFB0023B060 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		303AEC3A17AF7FFB0023B060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,7 +110,6 @@
 		305CF36417B10FEA006346C1 /* WithSkin.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithSkin.vs; path = Shaders/WithSkin.vs; sourceTree = "<group>"; };
 		305CF36517B10FEA006346C1 /* WithTwoLights.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithTwoLights.fs; path = Shaders/WithTwoLights.fs; sourceTree = "<group>"; };
 		305CF36617B10FEA006346C1 /* WithTwoLights.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithTwoLights.vs; path = Shaders/WithTwoLights.vs; sourceTree = "<group>"; };
-		305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = ../../sdk/PowerVR/GraphicsSDK/SDK_3.1/Tools/OGLES2/Build/iOS/OGLES2Tools.xcode; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305CF40517B115AB006346C1 /* libOGLES2Tools.a in Frameworks */,
+				300FDCFD17B1315000F05A7A /* libOGLES2Tools.a in Frameworks */,
 				305CF37617B113FE006346C1 /* libEngineLib.a in Frameworks */,
 				303AEC3917AF7FFB0023B060 /* UIKit.framework in Frameworks */,
 				303AEC3B17AF7FFB0023B060 /* Foundation.framework in Frameworks */,
@@ -130,10 +130,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300FDCF617B1312600F05A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300FDCFA17B1312C00F05A7A /* libOGLES2Tools.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		303AEC2C17AF7FFB0023B060 = {
 			isa = PBXGroup;
 			children = (
-				305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */,
+				300FDCF517B1312600F05A7A /* OGLES2Tools.xcode */,
 				305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */,
 				303AEC4217AF7FFB0023B060 /* EngineTest */,
 				303AEC3717AF7FFB0023B060 /* Frameworks */,
@@ -221,14 +229,6 @@
 			name = Shaders;
 			sourceTree = "<group>";
 		};
-		305CF3FE17B11569006346C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				305CF40217B11574006346C1 /* libOGLES2Tools.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,7 +243,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				305CF40417B115A0006346C1 /* PBXTargetDependency */,
+				300FDCFC17B1313D00F05A7A /* PBXTargetDependency */,
 				305CF35817B10D1D006346C1 /* PBXTargetDependency */,
 			);
 			name = EngineTest;
@@ -276,8 +276,8 @@
 					ProjectRef = 305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */;
 				},
 				{
-					ProductGroup = 305CF3FE17B11569006346C1 /* Products */;
-					ProjectRef = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
+					ProductGroup = 300FDCF617B1312600F05A7A /* Products */;
+					ProjectRef = 300FDCF517B1312600F05A7A /* OGLES2Tools.xcode */;
 				},
 			);
 			projectRoot = "";
@@ -288,18 +288,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		300FDCFA17B1312C00F05A7A /* libOGLES2Tools.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOGLES2Tools.a;
+			remoteRef = 300FDCF917B1312C00F05A7A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		305CF35617B10D00006346C1 /* libEngineLib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libEngineLib.a;
 			remoteRef = 305CF35517B10D00006346C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		305CF40217B11574006346C1 /* libOGLES2Tools.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOGLES2Tools.a;
-			remoteRef = 305CF40117B11574006346C1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -350,15 +350,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		300FDCFC17B1313D00F05A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OGLES2Tools;
+			targetProxy = 300FDCFB17B1313D00F05A7A /* PBXContainerItemProxy */;
+		};
 		305CF35817B10D1D006346C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EngineLib;
 			targetProxy = 305CF35717B10D1D006346C1 /* PBXContainerItemProxy */;
-		};
-		305CF40417B115A0006346C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OGLES2Tools;
-			targetProxy = 305CF40317B115A0006346C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,7 +456,7 @@
 				HEADER_SEARCH_PATHS = /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/Tools/OGLES2;
 				INFOPLIST_FILE = "EngineTest/EngineTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3D/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -469,7 +469,7 @@
 				HEADER_SEARCH_PATHS = /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/Tools/OGLES2;
 				INFOPLIST_FILE = "EngineTest/EngineTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3D/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
