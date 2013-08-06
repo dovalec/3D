@@ -1,0 +1,67 @@
+#Template makefile for maya project
+
+ifndef MAYA_RELEASE
+MAYA_RELEASE = 2012
+endif
+
+#determine os
+UNAME = $(shell uname)
+
+PLUGIN_NAME=Intersection_$(MAYA_RELEASE)
+
+ifeq ($(UNAME), Linux)
+MAYADIR = /usr/autodesk/maya$(MAYA_RELEASE)-x64
+PLUGIN = $(PLUGIN_NAME).so
+PLATFORM_LFLAGS = -L$(MAYADIR)/lib
+PLATFORM_INCLUDES = -I$(MAYADIR)/include
+endif
+
+ifeq ($(UNAME), Darwin)
+MAYADIR = /Applications/Autodesk/maya$(MAYA_RELEASE)
+PLUGIN  = $(PLUGIN_NAME).bundle
+PLATFORM_LFLAGS = -L$(MAYADIR)/Maya.app/Contents/MacOS/ -framework AGL -framework OpenGL
+PLATFORM_INCLUDES = -I$(MAYADIR)/devkit/include
+endif
+
+include $(MAYADIR)/devkit/plug-ins/buildconfig
+
+PLUGIN_SRC=Intersection2.cpp
+PLUGIN_OBJ  = $(PLUGIN_SRC:%.cpp=build/$(MAYA_RELEASE)/%.o)
+
+OBJS = $(PLUGIN_OBJ)
+INCLUDES = $(PLATFORM_INCLUDES) -I/usr/X11R6/include
+
+LIBS     =  -lOpenMayaUI -lOpenMaya -lFoundation -lOpenMayaAnim
+LIBS_GL_EXTRA = -lGL -lGLU
+
+lib : directories $(PLUGIN)
+
+$(PLUGIN):  $(OBJS)
+        -rm -f $@
+        $(LD) -o $@ $(OBJS) $(LIBS) $(LFLAGS) $(PLATFORM_LFLAGS)
+
+.PHONY : directories
+
+directories: build \
+        build/$(MAYA_RELEASE) \
+
+build:
+        mkdir build
+
+build/$(MAYA_RELEASE) :
+        mkdir build/$(MAYA_RELEASE)
+
+build/$(MAYA_RELEASE)/%.o : %.cpp
+        $(C++) -o $@ -c $(INCLUDES) $(C++FLAGS) $(CPPFLAGS) $<
+
+.cpp.so:
+        rm -f $@
+        $(LD) -o $@ $(INCLUDES) $(C++FLAGS) $< $(LIBS)
+
+.c.o:
+        rm -f $@
+        $(CC) -o $@ -c $(INCLUDES) $(C++FLAGS) $(CFLAGS) $<
+
+clean:
+        rm $(OBJS)
+        rm $(PLUGIN)

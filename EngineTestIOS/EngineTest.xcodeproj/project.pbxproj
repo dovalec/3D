@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303AEC3917AF7FFB0023B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3817AF7FFB0023B060 /* UIKit.framework */; };
+		303AEC3B17AF7FFB0023B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3A17AF7FFB0023B060 /* Foundation.framework */; };
+		303AEC3D17AF7FFB0023B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3C17AF7FFB0023B060 /* CoreGraphics.framework */; };
+		303AEC3F17AF7FFB0023B060 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3E17AF7FFB0023B060 /* GLKit.framework */; };
+		303AEC4117AF7FFB0023B060 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC4017AF7FFB0023B060 /* OpenGLES.framework */; };
+		303AEC4717AF7FFB0023B060 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC4517AF7FFB0023B060 /* InfoPlist.strings */; };
+		303AEC4917AF7FFB0023B060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 303AEC4817AF7FFB0023B060 /* main.m */; };
+		303AEC4D17AF7FFB0023B060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 303AEC4C17AF7FFB0023B060 /* AppDelegate.m */; };
+		303AEC4F17AF7FFB0023B060 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC4E17AF7FFB0023B060 /* Default.png */; };
+		303AEC5117AF7FFB0023B060 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5017AF7FFB0023B060 /* Default@2x.png */; };
+		303AEC5317AF7FFB0023B060 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5217AF7FFB0023B060 /* Default-568h@2x.png */; };
+		303AEC5517AF7FFB0023B060 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5417AF7FFB0023B060 /* Shader.fsh */; };
+		303AEC5717AF7FFB0023B060 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5617AF7FFB0023B060 /* Shader.vsh */; };
+		303AEC5A17AF7FFB0023B060 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 303AEC5917AF7FFB0023B060 /* ViewController.mm */; };
+		303AEC5D17AF7FFB0023B060 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5B17AF7FFB0023B060 /* ViewController_iPhone.xib */; };
+		303AEC6017AF7FFB0023B060 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303AEC5E17AF7FFB0023B060 /* ViewController_iPad.xib */; };
+		305CF36717B10FEA006346C1 /* EnvMap.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35917B10FE9006346C1 /* EnvMap.fs */; };
+		305CF36817B10FEA006346C1 /* EnvMap.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35A17B10FE9006346C1 /* EnvMap.vs */; };
+		305CF36917B10FEA006346C1 /* NoLight.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35B17B10FE9006346C1 /* NoLight.fs */; };
+		305CF36A17B10FEA006346C1 /* NoLight.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35C17B10FE9006346C1 /* NoLight.vs */; };
+		305CF36B17B10FEA006346C1 /* WithLight.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35D17B10FE9006346C1 /* WithLight.fs */; };
+		305CF36C17B10FEA006346C1 /* WithLight.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35E17B10FEA006346C1 /* WithLight.vs */; };
+		305CF36D17B10FEA006346C1 /* WithLightAndSkin.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF35F17B10FEA006346C1 /* WithLightAndSkin.fs */; };
+		305CF36E17B10FEA006346C1 /* WithLightAndSkin.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36017B10FEA006346C1 /* WithLightAndSkin.vs */; };
+		305CF36F17B10FEA006346C1 /* WithLightPhong.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36117B10FEA006346C1 /* WithLightPhong.fs */; };
+		305CF37017B10FEA006346C1 /* WithLightPhong.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36217B10FEA006346C1 /* WithLightPhong.vs */; };
+		305CF37117B10FEA006346C1 /* WithSkin.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36317B10FEA006346C1 /* WithSkin.fs */; };
+		305CF37217B10FEA006346C1 /* WithSkin.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36417B10FEA006346C1 /* WithSkin.vs */; };
+		305CF37317B10FEA006346C1 /* WithTwoLights.fs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36517B10FEA006346C1 /* WithTwoLights.fs */; };
+		305CF37417B10FEA006346C1 /* WithTwoLights.vs in Sources */ = {isa = PBXBuildFile; fileRef = 305CF36617B10FEA006346C1 /* WithTwoLights.vs */; };
+		305CF37617B113FE006346C1 /* libEngineLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CF35617B10D00006346C1 /* libEngineLib.a */; };
+		305CF40517B115AB006346C1 /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CF40217B11574006346C1 /* libOGLES2Tools.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		305CF35517B10D00006346C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 303AEC6F17AF80300023B060;
+			remoteInfo = EngineLib;
+		};
+		305CF35717B10D1D006346C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 303AEC6E17AF80300023B060;
+			remoteInfo = EngineLib;
+		};
+		305CF40117B11574006346C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = F8748A3A0FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
+		305CF40317B115A0006346C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
+			proxyType = 1;
+			remoteGlobalIDString = F8748A390FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		303AEC3517AF7FFB0023B060 /* EngineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		303AEC3817AF7FFB0023B060 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		303AEC3A17AF7FFB0023B060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		303AEC3C17AF7FFB0023B060 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		303AEC3E17AF7FFB0023B060 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		303AEC4017AF7FFB0023B060 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		303AEC4417AF7FFB0023B060 /* EngineTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EngineTest-Info.plist"; sourceTree = "<group>"; };
+		303AEC4617AF7FFB0023B060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		303AEC4817AF7FFB0023B060 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		303AEC4A17AF7FFB0023B060 /* EngineTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EngineTest-Prefix.pch"; sourceTree = "<group>"; };
+		303AEC4B17AF7FFB0023B060 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		303AEC4C17AF7FFB0023B060 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		303AEC4E17AF7FFB0023B060 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		303AEC5017AF7FFB0023B060 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		303AEC5217AF7FFB0023B060 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		303AEC5417AF7FFB0023B060 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		303AEC5617AF7FFB0023B060 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		303AEC5817AF7FFB0023B060 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		303AEC5917AF7FFB0023B060 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		303AEC5C17AF7FFB0023B060 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		303AEC5F17AF7FFB0023B060 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EngineLib.xcodeproj; path = ../EngineLibIOS/EngineLib.xcodeproj; sourceTree = "<group>"; };
+		305CF35917B10FE9006346C1 /* EnvMap.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = EnvMap.fs; path = Shaders/EnvMap.fs; sourceTree = "<group>"; };
+		305CF35A17B10FE9006346C1 /* EnvMap.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = EnvMap.vs; path = Shaders/EnvMap.vs; sourceTree = "<group>"; };
+		305CF35B17B10FE9006346C1 /* NoLight.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = NoLight.fs; path = Shaders/NoLight.fs; sourceTree = "<group>"; };
+		305CF35C17B10FE9006346C1 /* NoLight.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = NoLight.vs; path = Shaders/NoLight.vs; sourceTree = "<group>"; };
+		305CF35D17B10FE9006346C1 /* WithLight.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLight.fs; path = Shaders/WithLight.fs; sourceTree = "<group>"; };
+		305CF35E17B10FEA006346C1 /* WithLight.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLight.vs; path = Shaders/WithLight.vs; sourceTree = "<group>"; };
+		305CF35F17B10FEA006346C1 /* WithLightAndSkin.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLightAndSkin.fs; path = Shaders/WithLightAndSkin.fs; sourceTree = "<group>"; };
+		305CF36017B10FEA006346C1 /* WithLightAndSkin.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLightAndSkin.vs; path = Shaders/WithLightAndSkin.vs; sourceTree = "<group>"; };
+		305CF36117B10FEA006346C1 /* WithLightPhong.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLightPhong.fs; path = Shaders/WithLightPhong.fs; sourceTree = "<group>"; };
+		305CF36217B10FEA006346C1 /* WithLightPhong.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithLightPhong.vs; path = Shaders/WithLightPhong.vs; sourceTree = "<group>"; };
+		305CF36317B10FEA006346C1 /* WithSkin.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithSkin.fs; path = Shaders/WithSkin.fs; sourceTree = "<group>"; };
+		305CF36417B10FEA006346C1 /* WithSkin.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithSkin.vs; path = Shaders/WithSkin.vs; sourceTree = "<group>"; };
+		305CF36517B10FEA006346C1 /* WithTwoLights.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithTwoLights.fs; path = Shaders/WithTwoLights.fs; sourceTree = "<group>"; };
+		305CF36617B10FEA006346C1 /* WithTwoLights.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WithTwoLights.vs; path = Shaders/WithTwoLights.vs; sourceTree = "<group>"; };
+		305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = ../../sdk/PowerVR/GraphicsSDK/SDK_3.1/Tools/OGLES2/Build/iOS/OGLES2Tools.xcode; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		303AEC3217AF7FFB0023B060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305CF40517B115AB006346C1 /* libOGLES2Tools.a in Frameworks */,
+				305CF37617B113FE006346C1 /* libEngineLib.a in Frameworks */,
+				303AEC3917AF7FFB0023B060 /* UIKit.framework in Frameworks */,
+				303AEC3B17AF7FFB0023B060 /* Foundation.framework in Frameworks */,
+				303AEC3D17AF7FFB0023B060 /* CoreGraphics.framework in Frameworks */,
+				303AEC3F17AF7FFB0023B060 /* GLKit.framework in Frameworks */,
+				303AEC4117AF7FFB0023B060 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303AEC2C17AF7FFB0023B060 = {
+			isa = PBXGroup;
+			children = (
+				305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */,
+				305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */,
+				303AEC4217AF7FFB0023B060 /* EngineTest */,
+				303AEC3717AF7FFB0023B060 /* Frameworks */,
+				303AEC3617AF7FFB0023B060 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		303AEC3617AF7FFB0023B060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				303AEC3517AF7FFB0023B060 /* EngineTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		303AEC3717AF7FFB0023B060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				303AEC3817AF7FFB0023B060 /* UIKit.framework */,
+				303AEC3A17AF7FFB0023B060 /* Foundation.framework */,
+				303AEC3C17AF7FFB0023B060 /* CoreGraphics.framework */,
+				303AEC3E17AF7FFB0023B060 /* GLKit.framework */,
+				303AEC4017AF7FFB0023B060 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		303AEC4217AF7FFB0023B060 /* EngineTest */ = {
+			isa = PBXGroup;
+			children = (
+				305CF37517B10FEF006346C1 /* Shaders */,
+				303AEC4B17AF7FFB0023B060 /* AppDelegate.h */,
+				303AEC4C17AF7FFB0023B060 /* AppDelegate.m */,
+				303AEC5817AF7FFB0023B060 /* ViewController.h */,
+				303AEC5917AF7FFB0023B060 /* ViewController.mm */,
+				303AEC5B17AF7FFB0023B060 /* ViewController_iPhone.xib */,
+				303AEC5E17AF7FFB0023B060 /* ViewController_iPad.xib */,
+				303AEC4317AF7FFB0023B060 /* Supporting Files */,
+			);
+			path = EngineTest;
+			sourceTree = "<group>";
+		};
+		303AEC4317AF7FFB0023B060 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				303AEC4417AF7FFB0023B060 /* EngineTest-Info.plist */,
+				303AEC4517AF7FFB0023B060 /* InfoPlist.strings */,
+				303AEC4817AF7FFB0023B060 /* main.m */,
+				303AEC4A17AF7FFB0023B060 /* EngineTest-Prefix.pch */,
+				303AEC4E17AF7FFB0023B060 /* Default.png */,
+				303AEC5017AF7FFB0023B060 /* Default@2x.png */,
+				303AEC5217AF7FFB0023B060 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305CF35217B10CFF006346C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305CF35617B10D00006346C1 /* libEngineLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305CF37517B10FEF006346C1 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				305CF35917B10FE9006346C1 /* EnvMap.fs */,
+				305CF35A17B10FE9006346C1 /* EnvMap.vs */,
+				305CF35B17B10FE9006346C1 /* NoLight.fs */,
+				305CF35C17B10FE9006346C1 /* NoLight.vs */,
+				305CF35D17B10FE9006346C1 /* WithLight.fs */,
+				305CF35E17B10FEA006346C1 /* WithLight.vs */,
+				305CF35F17B10FEA006346C1 /* WithLightAndSkin.fs */,
+				305CF36017B10FEA006346C1 /* WithLightAndSkin.vs */,
+				305CF36117B10FEA006346C1 /* WithLightPhong.fs */,
+				305CF36217B10FEA006346C1 /* WithLightPhong.vs */,
+				305CF36317B10FEA006346C1 /* WithSkin.fs */,
+				305CF36417B10FEA006346C1 /* WithSkin.vs */,
+				305CF36517B10FEA006346C1 /* WithTwoLights.fs */,
+				305CF36617B10FEA006346C1 /* WithTwoLights.vs */,
+				303AEC5417AF7FFB0023B060 /* Shader.fsh */,
+				303AEC5617AF7FFB0023B060 /* Shader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		305CF3FE17B11569006346C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305CF40217B11574006346C1 /* libOGLES2Tools.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		303AEC3417AF7FFB0023B060 /* EngineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303AEC6317AF7FFB0023B060 /* Build configuration list for PBXNativeTarget "EngineTest" */;
+			buildPhases = (
+				303AEC3117AF7FFB0023B060 /* Sources */,
+				303AEC3217AF7FFB0023B060 /* Frameworks */,
+				303AEC3317AF7FFB0023B060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				305CF40417B115A0006346C1 /* PBXTargetDependency */,
+				305CF35817B10D1D006346C1 /* PBXTargetDependency */,
+			);
+			name = EngineTest;
+			productName = EngineTest;
+			productReference = 303AEC3517AF7FFB0023B060 /* EngineTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		303AEC2D17AF7FFB0023B060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dov Caspi";
+			};
+			buildConfigurationList = 303AEC3017AF7FFB0023B060 /* Build configuration list for PBXProject "EngineTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 303AEC2C17AF7FFB0023B060;
+			productRefGroup = 303AEC3617AF7FFB0023B060 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 305CF35217B10CFF006346C1 /* Products */;
+					ProjectRef = 305CF35117B10CFF006346C1 /* EngineLib.xcodeproj */;
+				},
+				{
+					ProductGroup = 305CF3FE17B11569006346C1 /* Products */;
+					ProjectRef = 305CF3FD17B11569006346C1 /* OGLES2Tools.xcode */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				303AEC3417AF7FFB0023B060 /* EngineTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		305CF35617B10D00006346C1 /* libEngineLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEngineLib.a;
+			remoteRef = 305CF35517B10D00006346C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		305CF40217B11574006346C1 /* libOGLES2Tools.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOGLES2Tools.a;
+			remoteRef = 305CF40117B11574006346C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		303AEC3317AF7FFB0023B060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303AEC4717AF7FFB0023B060 /* InfoPlist.strings in Resources */,
+				303AEC4F17AF7FFB0023B060 /* Default.png in Resources */,
+				303AEC5117AF7FFB0023B060 /* Default@2x.png in Resources */,
+				303AEC5317AF7FFB0023B060 /* Default-568h@2x.png in Resources */,
+				303AEC5517AF7FFB0023B060 /* Shader.fsh in Resources */,
+				303AEC5717AF7FFB0023B060 /* Shader.vsh in Resources */,
+				303AEC5D17AF7FFB0023B060 /* ViewController_iPhone.xib in Resources */,
+				303AEC6017AF7FFB0023B060 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		303AEC3117AF7FFB0023B060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303AEC4917AF7FFB0023B060 /* main.m in Sources */,
+				303AEC4D17AF7FFB0023B060 /* AppDelegate.m in Sources */,
+				303AEC5A17AF7FFB0023B060 /* ViewController.mm in Sources */,
+				305CF36717B10FEA006346C1 /* EnvMap.fs in Sources */,
+				305CF36817B10FEA006346C1 /* EnvMap.vs in Sources */,
+				305CF36917B10FEA006346C1 /* NoLight.fs in Sources */,
+				305CF36A17B10FEA006346C1 /* NoLight.vs in Sources */,
+				305CF36B17B10FEA006346C1 /* WithLight.fs in Sources */,
+				305CF36C17B10FEA006346C1 /* WithLight.vs in Sources */,
+				305CF36D17B10FEA006346C1 /* WithLightAndSkin.fs in Sources */,
+				305CF36E17B10FEA006346C1 /* WithLightAndSkin.vs in Sources */,
+				305CF36F17B10FEA006346C1 /* WithLightPhong.fs in Sources */,
+				305CF37017B10FEA006346C1 /* WithLightPhong.vs in Sources */,
+				305CF37117B10FEA006346C1 /* WithSkin.fs in Sources */,
+				305CF37217B10FEA006346C1 /* WithSkin.vs in Sources */,
+				305CF37317B10FEA006346C1 /* WithTwoLights.fs in Sources */,
+				305CF37417B10FEA006346C1 /* WithTwoLights.vs in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		305CF35817B10D1D006346C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EngineLib;
+			targetProxy = 305CF35717B10D1D006346C1 /* PBXContainerItemProxy */;
+		};
+		305CF40417B115A0006346C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OGLES2Tools;
+			targetProxy = 305CF40317B115A0006346C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		303AEC4517AF7FFB0023B060 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303AEC4617AF7FFB0023B060 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		303AEC5B17AF7FFB0023B060 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303AEC5C17AF7FFB0023B060 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		303AEC5E17AF7FFB0023B060 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303AEC5F17AF7FFB0023B060 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		303AEC6117AF7FFB0023B060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+			};
+			name = Debug;
+		};
+		303AEC6217AF7FFB0023B060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		303AEC6417AF7FFB0023B060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EngineTest/EngineTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/Tools/OGLES2;
+				INFOPLIST_FILE = "EngineTest/EngineTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		303AEC6517AF7FFB0023B060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EngineTest/EngineTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/Tools/OGLES2;
+				INFOPLIST_FILE = "EngineTest/EngineTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/dovcaspi/dev2/2014/3DEngine/** /Users/dovcaspi/dev2/sdk/PowerVR/GraphicsSDK/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		303AEC3017AF7FFB0023B060 /* Build configuration list for PBXProject "EngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303AEC6117AF7FFB0023B060 /* Debug */,
+				303AEC6217AF7FFB0023B060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303AEC6317AF7FFB0023B060 /* Build configuration list for PBXNativeTarget "EngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303AEC6417AF7FFB0023B060 /* Debug */,
+				303AEC6517AF7FFB0023B060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 303AEC2D17AF7FFB0023B060 /* Project object */;
+}

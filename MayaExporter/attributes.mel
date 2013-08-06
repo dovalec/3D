@@ -1,0 +1,7 @@
+addAttr -ln "Layer" -nn "Layer" -at long  -dv 0;
+addAttr -ln "ShaderType" -nn "ShaderType" -at long  -dv 0;
+addAttr -ln "AlphaMode" -nn "AlphaMode" -at long  -dv 0;
+addAttr -ln "DisplayMode" -nn "DisplayMode" -at long  -dv 0;
+addAttr -ln "Depth" -nn "Depth" -at long  -dv 1;
+addAttr -ln "BackFaceCulling" -nn "BackFaceCulling" -at long  -dv 1;
+addAttr -ln "Occlusion" -nn "Occlusion" -at long  -dv 1;

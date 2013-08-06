@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Library/Java/JavaVirtualMachines/1.6.0_31-b04-415.jdk/Contents/Classes/classes.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Library/Java/JavaVirtualMachines/1.6.0_31-b04-415.jdk/Contents/Home/src.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=src
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled

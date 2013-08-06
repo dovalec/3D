@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30EA21CF17AED19E00CB48D9 /* AnimationExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219517AED19E00CB48D9 /* AnimationExport.cpp */; };
+		30EA21D017AED19E00CB48D9 /* BotLauncherExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219717AED19E00CB48D9 /* BotLauncherExport.cpp */; };
+		30EA21D117AED19E00CB48D9 /* CameraExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219917AED19E00CB48D9 /* CameraExport.cpp */; };
+		30EA21D217AED19E00CB48D9 /* CollisionMeshExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219B17AED19E00CB48D9 /* CollisionMeshExport.cpp */; };
+		30EA21D317AED19E00CB48D9 /* CurveExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219D17AED19E00CB48D9 /* CurveExport.cpp */; };
+		30EA21D417AED19E00CB48D9 /* DoorsExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA219F17AED19E00CB48D9 /* DoorsExport.cpp */; };
+		30EA21D517AED19E00CB48D9 /* Exporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21A117AED19E00CB48D9 /* Exporter.cpp */; };
+		30EA21D617AED19E00CB48D9 /* GeometryExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21A217AED19E00CB48D9 /* GeometryExport.cpp */; };
+		30EA21D717AED19E00CB48D9 /* Globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21A417AED19E00CB48D9 /* Globals.cpp */; };
+		30EA21D817AED19E00CB48D9 /* GraphExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21A617AED19E00CB48D9 /* GraphExport.cpp */; };
+		30EA21D917AED19E00CB48D9 /* LocatorExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21A817AED19E00CB48D9 /* LocatorExport.cpp */; };
+		30EA21DA17AED19E00CB48D9 /* MaterialData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21AA17AED19E00CB48D9 /* MaterialData.cpp */; };
+		30EA21DB17AED19E00CB48D9 /* MaterialExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21AC17AED19E00CB48D9 /* MaterialExport.cpp */; };
+		30EA21DC17AED19E00CB48D9 /* MeshData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21AE17AED19E00CB48D9 /* MeshData.cpp */; };
+		30EA21DD17AED19E00CB48D9 /* ModelExporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21B017AED19E00CB48D9 /* ModelExporter.cpp */; };
+		30EA21DE17AED19E00CB48D9 /* PhysicsExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21B217AED19E00CB48D9 /* PhysicsExport.cpp */; };
+		30EA21DF17AED19E00CB48D9 /* PVRTTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21B417AED19E00CB48D9 /* PVRTTriStrip.cpp */; };
+		30EA21E017AED19E00CB48D9 /* RefSceneExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21B617AED19E00CB48D9 /* RefSceneExport.cpp */; };
+		30EA21E117AED19E00CB48D9 /* Saver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21B817AED19E00CB48D9 /* Saver.cpp */; };
+		30EA21E217AED19E00CB48D9 /* SkinExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21BA17AED19E00CB48D9 /* SkinExport.cpp */; };
+		30EA21E317AED19E00CB48D9 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21BC17AED19E00CB48D9 /* stdafx.cpp */; };
+		30EA21E417AED19E00CB48D9 /* StopCircleExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21BE17AED19E00CB48D9 /* StopCircleExport.cpp */; };
+		30EA21E517AED19E00CB48D9 /* TextureData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21C117AED19E00CB48D9 /* TextureData.cpp */; };
+		30EA21E617AED19E00CB48D9 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21C317AED19E00CB48D9 /* Transform.cpp */; };
+		30EA21E717AED19E00CB48D9 /* TransformData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21C517AED19E00CB48D9 /* TransformData.cpp */; };
+		30EA21E817AED19E00CB48D9 /* TransformExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21C717AED19E00CB48D9 /* TransformExport.cpp */; };
+		30EA21E917AED19E00CB48D9 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21C917AED19E00CB48D9 /* Util.cpp */; };
+		30EA21EA17AED19E00CB48D9 /* UVAnimationExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21CB17AED19E00CB48D9 /* UVAnimationExport.cpp */; };
+		30EA21EB17AED19E00CB48D9 /* WireExport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30EA21CD17AED19E00CB48D9 /* WireExport.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30EA214C17AED0DA00CB48D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		305CF34F17B0F049006346C1 /* attributes.mel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attributes.mel; sourceTree = "<group>"; };
+		30EA214E17AED0DA00CB48D9 /* MayaExporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MayaExporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EA219517AED19E00CB48D9 /* AnimationExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationExport.cpp; sourceTree = "<group>"; };
+		30EA219617AED19E00CB48D9 /* AnimationExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationExport.h; sourceTree = "<group>"; };
+		30EA219717AED19E00CB48D9 /* BotLauncherExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BotLauncherExport.cpp; sourceTree = "<group>"; };
+		30EA219817AED19E00CB48D9 /* BotLauncherExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotLauncherExport.h; sourceTree = "<group>"; };
+		30EA219917AED19E00CB48D9 /* CameraExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraExport.cpp; sourceTree = "<group>"; };
+		30EA219A17AED19E00CB48D9 /* CameraExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraExport.h; sourceTree = "<group>"; };
+		30EA219B17AED19E00CB48D9 /* CollisionMeshExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionMeshExport.cpp; sourceTree = "<group>"; };
+		30EA219C17AED19E00CB48D9 /* CollisionMeshExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionMeshExport.h; sourceTree = "<group>"; };
+		30EA219D17AED19E00CB48D9 /* CurveExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CurveExport.cpp; sourceTree = "<group>"; };
+		30EA219E17AED19E00CB48D9 /* CurveExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveExport.h; sourceTree = "<group>"; };
+		30EA219F17AED19E00CB48D9 /* DoorsExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoorsExport.cpp; sourceTree = "<group>"; };
+		30EA21A017AED19E00CB48D9 /* DoorsExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorsExport.h; sourceTree = "<group>"; };
+		30EA21A117AED19E00CB48D9 /* Exporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exporter.cpp; sourceTree = "<group>"; };
+		30EA21A217AED19E00CB48D9 /* GeometryExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeometryExport.cpp; sourceTree = "<group>"; };
+		30EA21A317AED19E00CB48D9 /* GeometryExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryExport.h; sourceTree = "<group>"; };
+		30EA21A417AED19E00CB48D9 /* Globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Globals.cpp; sourceTree = "<group>"; };
+		30EA21A517AED19E00CB48D9 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		30EA21A617AED19E00CB48D9 /* GraphExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphExport.cpp; sourceTree = "<group>"; };
+		30EA21A717AED19E00CB48D9 /* GraphExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphExport.h; sourceTree = "<group>"; };
+		30EA21A817AED19E00CB48D9 /* LocatorExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocatorExport.cpp; sourceTree = "<group>"; };
+		30EA21A917AED19E00CB48D9 /* LocatorExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocatorExport.h; sourceTree = "<group>"; };
+		30EA21AA17AED19E00CB48D9 /* MaterialData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaterialData.cpp; sourceTree = "<group>"; };
+		30EA21AB17AED19E00CB48D9 /* MaterialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialData.h; sourceTree = "<group>"; };
+		30EA21AC17AED19E00CB48D9 /* MaterialExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaterialExport.cpp; sourceTree = "<group>"; };
+		30EA21AD17AED19E00CB48D9 /* MaterialExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialExport.h; sourceTree = "<group>"; };
+		30EA21AE17AED19E00CB48D9 /* MeshData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshData.cpp; sourceTree = "<group>"; };
+		30EA21AF17AED19E00CB48D9 /* MeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshData.h; sourceTree = "<group>"; };
+		30EA21B017AED19E00CB48D9 /* ModelExporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelExporter.cpp; sourceTree = "<group>"; };
+		30EA21B117AED19E00CB48D9 /* ModelExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelExporter.h; sourceTree = "<group>"; };
+		30EA21B217AED19E00CB48D9 /* PhysicsExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsExport.cpp; sourceTree = "<group>"; };
+		30EA21B317AED19E00CB48D9 /* PhysicsExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsExport.h; sourceTree = "<group>"; };
+		30EA21B417AED19E00CB48D9 /* PVRTTriStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTTriStrip.cpp; sourceTree = "<group>"; };
+		30EA21B517AED19E00CB48D9 /* PVRTTriStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTriStrip.h; sourceTree = "<group>"; };
+		30EA21B617AED19E00CB48D9 /* RefSceneExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RefSceneExport.cpp; sourceTree = "<group>"; };
+		30EA21B717AED19E00CB48D9 /* RefSceneExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefSceneExport.h; sourceTree = "<group>"; };
+		30EA21B817AED19E00CB48D9 /* Saver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Saver.cpp; sourceTree = "<group>"; };
+		30EA21B917AED19E00CB48D9 /* Saver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Saver.h; sourceTree = "<group>"; };
+		30EA21BA17AED19E00CB48D9 /* SkinExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkinExport.cpp; sourceTree = "<group>"; };
+		30EA21BB17AED19E00CB48D9 /* SkinExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinExport.h; sourceTree = "<group>"; };
+		30EA21BC17AED19E00CB48D9 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		30EA21BD17AED19E00CB48D9 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		30EA21BE17AED19E00CB48D9 /* StopCircleExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StopCircleExport.cpp; sourceTree = "<group>"; };
+		30EA21BF17AED19E00CB48D9 /* StopCircleExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopCircleExport.h; sourceTree = "<group>"; };
+		30EA21C017AED19E00CB48D9 /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targetver.h; sourceTree = "<group>"; };
+		30EA21C117AED19E00CB48D9 /* TextureData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureData.cpp; sourceTree = "<group>"; };
+		30EA21C217AED19E00CB48D9 /* TextureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureData.h; sourceTree = "<group>"; };
+		30EA21C317AED19E00CB48D9 /* Transform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transform.cpp; sourceTree = "<group>"; };
+		30EA21C417AED19E00CB48D9 /* Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transform.h; sourceTree = "<group>"; };
+		30EA21C517AED19E00CB48D9 /* TransformData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformData.cpp; sourceTree = "<group>"; };
+		30EA21C617AED19E00CB48D9 /* TransformData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformData.h; sourceTree = "<group>"; };
+		30EA21C717AED19E00CB48D9 /* TransformExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformExport.cpp; sourceTree = "<group>"; };
+		30EA21C817AED19E00CB48D9 /* TransformExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformExport.h; sourceTree = "<group>"; };
+		30EA21C917AED19E00CB48D9 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		30EA21CA17AED19E00CB48D9 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		30EA21CB17AED19E00CB48D9 /* UVAnimationExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UVAnimationExport.cpp; sourceTree = "<group>"; };
+		30EA21CC17AED19E00CB48D9 /* UVAnimationExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVAnimationExport.h; sourceTree = "<group>"; };
+		30EA21CD17AED19E00CB48D9 /* WireExport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WireExport.cpp; sourceTree = "<group>"; };
+		30EA21CE17AED19E00CB48D9 /* WireExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireExport.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30EA214B17AED0DA00CB48D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30EA214517AED0DA00CB48D9 = {
+			isa = PBXGroup;
+			children = (
+				305CF34F17B0F049006346C1 /* attributes.mel */,
+				30EA219517AED19E00CB48D9 /* AnimationExport.cpp */,
+				30EA219617AED19E00CB48D9 /* AnimationExport.h */,
+				30EA219717AED19E00CB48D9 /* BotLauncherExport.cpp */,
+				30EA219817AED19E00CB48D9 /* BotLauncherExport.h */,
+				30EA219917AED19E00CB48D9 /* CameraExport.cpp */,
+				30EA219A17AED19E00CB48D9 /* CameraExport.h */,
+				30EA219B17AED19E00CB48D9 /* CollisionMeshExport.cpp */,
+				30EA219C17AED19E00CB48D9 /* CollisionMeshExport.h */,
+				30EA219D17AED19E00CB48D9 /* CurveExport.cpp */,
+				30EA219E17AED19E00CB48D9 /* CurveExport.h */,
+				30EA219F17AED19E00CB48D9 /* DoorsExport.cpp */,
+				30EA21A017AED19E00CB48D9 /* DoorsExport.h */,
+				30EA21A117AED19E00CB48D9 /* Exporter.cpp */,
+				30EA21A217AED19E00CB48D9 /* GeometryExport.cpp */,
+				30EA21A317AED19E00CB48D9 /* GeometryExport.h */,
+				30EA21A417AED19E00CB48D9 /* Globals.cpp */,
+				30EA21A517AED19E00CB48D9 /* Globals.h */,
+				30EA21A617AED19E00CB48D9 /* GraphExport.cpp */,
+				30EA21A717AED19E00CB48D9 /* GraphExport.h */,
+				30EA21A817AED19E00CB48D9 /* LocatorExport.cpp */,
+				30EA21A917AED19E00CB48D9 /* LocatorExport.h */,
+				30EA21AA17AED19E00CB48D9 /* MaterialData.cpp */,
+				30EA21AB17AED19E00CB48D9 /* MaterialData.h */,
+				30EA21AC17AED19E00CB48D9 /* MaterialExport.cpp */,
+				30EA21AD17AED19E00CB48D9 /* MaterialExport.h */,
+				30EA21AE17AED19E00CB48D9 /* MeshData.cpp */,
+				30EA21AF17AED19E00CB48D9 /* MeshData.h */,
+				30EA21B017AED19E00CB48D9 /* ModelExporter.cpp */,
+				30EA21B117AED19E00CB48D9 /* ModelExporter.h */,
+				30EA21B217AED19E00CB48D9 /* PhysicsExport.cpp */,
+				30EA21B317AED19E00CB48D9 /* PhysicsExport.h */,
+				30EA21B417AED19E00CB48D9 /* PVRTTriStrip.cpp */,
+				30EA21B517AED19E00CB48D9 /* PVRTTriStrip.h */,
+				30EA21B617AED19E00CB48D9 /* RefSceneExport.cpp */,
+				30EA21B717AED19E00CB48D9 /* RefSceneExport.h */,
+				30EA21B817AED19E00CB48D9 /* Saver.cpp */,
+				30EA21B917AED19E00CB48D9 /* Saver.h */,
+				30EA21BA17AED19E00CB48D9 /* SkinExport.cpp */,
+				30EA21BB17AED19E00CB48D9 /* SkinExport.h */,
+				30EA21BC17AED19E00CB48D9 /* stdafx.cpp */,
+				30EA21BD17AED19E00CB48D9 /* stdafx.h */,
+				30EA21BE17AED19E00CB48D9 /* StopCircleExport.cpp */,
+				30EA21BF17AED19E00CB48D9 /* StopCircleExport.h */,
+				30EA21C017AED19E00CB48D9 /* targetver.h */,
+				30EA21C117AED19E00CB48D9 /* TextureData.cpp */,
+				30EA21C217AED19E00CB48D9 /* TextureData.h */,
+				30EA21C317AED19E00CB48D9 /* Transform.cpp */,
+				30EA21C417AED19E00CB48D9 /* Transform.h */,
+				30EA21C517AED19E00CB48D9 /* TransformData.cpp */,
+				30EA21C617AED19E00CB48D9 /* TransformData.h */,
+				30EA21C717AED19E00CB48D9 /* TransformExport.cpp */,
+				30EA21C817AED19E00CB48D9 /* TransformExport.h */,
+				30EA21C917AED19E00CB48D9 /* Util.cpp */,
+				30EA21CA17AED19E00CB48D9 /* Util.h */,
+				30EA21CB17AED19E00CB48D9 /* UVAnimationExport.cpp */,
+				30EA21CC17AED19E00CB48D9 /* UVAnimationExport.h */,
+				30EA21CD17AED19E00CB48D9 /* WireExport.cpp */,
+				30EA21CE17AED19E00CB48D9 /* WireExport.h */,
+				30EA214F17AED0DA00CB48D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30EA214F17AED0DA00CB48D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30EA214E17AED0DA00CB48D9 /* MayaExporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30EA214D17AED0DA00CB48D9 /* MayaExporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EA215717AED0DA00CB48D9 /* Build configuration list for PBXNativeTarget "MayaExporter" */;
+			buildPhases = (
+				30EA214A17AED0DA00CB48D9 /* Sources */,
+				30EA214B17AED0DA00CB48D9 /* Frameworks */,
+				30EA214C17AED0DA00CB48D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MayaExporter;
+			productName = MayaExporter;
+			productReference = 30EA214E17AED0DA00CB48D9 /* MayaExporter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30EA214617AED0DA00CB48D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Dov;
+			};
+			buildConfigurationList = 30EA214917AED0DA00CB48D9 /* Build configuration list for PBXProject "MayaExporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30EA214517AED0DA00CB48D9;
+			productRefGroup = 30EA214F17AED0DA00CB48D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EA214D17AED0DA00CB48D9 /* MayaExporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EA214A17AED0DA00CB48D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EA21CF17AED19E00CB48D9 /* AnimationExport.cpp in Sources */,
+				30EA21D017AED19E00CB48D9 /* BotLauncherExport.cpp in Sources */,
+				30EA21D117AED19E00CB48D9 /* CameraExport.cpp in Sources */,
+				30EA21D217AED19E00CB48D9 /* CollisionMeshExport.cpp in Sources */,
+				30EA21D317AED19E00CB48D9 /* CurveExport.cpp in Sources */,
+				30EA21D417AED19E00CB48D9 /* DoorsExport.cpp in Sources */,
+				30EA21D517AED19E00CB48D9 /* Exporter.cpp in Sources */,
+				30EA21D617AED19E00CB48D9 /* GeometryExport.cpp in Sources */,
+				30EA21D717AED19E00CB48D9 /* Globals.cpp in Sources */,
+				30EA21D817AED19E00CB48D9 /* GraphExport.cpp in Sources */,
+				30EA21D917AED19E00CB48D9 /* LocatorExport.cpp in Sources */,
+				30EA21DA17AED19E00CB48D9 /* MaterialData.cpp in Sources */,
+				30EA21DB17AED19E00CB48D9 /* MaterialExport.cpp in Sources */,
+				30EA21DC17AED19E00CB48D9 /* MeshData.cpp in Sources */,
+				30EA21DD17AED19E00CB48D9 /* ModelExporter.cpp in Sources */,
+				30EA21DE17AED19E00CB48D9 /* PhysicsExport.cpp in Sources */,
+				30EA21DF17AED19E00CB48D9 /* PVRTTriStrip.cpp in Sources */,
+				30EA21E017AED19E00CB48D9 /* RefSceneExport.cpp in Sources */,
+				30EA21E117AED19E00CB48D9 /* Saver.cpp in Sources */,
+				30EA21E217AED19E00CB48D9 /* SkinExport.cpp in Sources */,
+				30EA21E317AED19E00CB48D9 /* stdafx.cpp in Sources */,
+				30EA21E417AED19E00CB48D9 /* StopCircleExport.cpp in Sources */,
+				30EA21E517AED19E00CB48D9 /* TextureData.cpp in Sources */,
+				30EA21E617AED19E00CB48D9 /* Transform.cpp in Sources */,
+				30EA21E717AED19E00CB48D9 /* TransformData.cpp in Sources */,
+				30EA21E817AED19E00CB48D9 /* TransformExport.cpp in Sources */,
+				30EA21E917AED19E00CB48D9 /* Util.cpp in Sources */,
+				30EA21EA17AED19E00CB48D9 /* UVAnimationExport.cpp in Sources */,
+				30EA21EB17AED19E00CB48D9 /* WireExport.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30EA215517AED0DA00CB48D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_BOOL,
+					MAC_PLUGIN,
+					REQUIRE_IOSTREAM,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Autodesk/maya2013/devkit/include/maya,
+					/Applications/Autodesk/maya2013/devkit/include,
+				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = /Applications/Autodesk/maya2013/devkit/include/maya;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Autodesk/maya2013/devkit/include/maya /Applications/Autodesk/maya2013/devkit/include";
+			};
+			name = Debug;
+		};
+		30EA215617AED0DA00CB48D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_BOOL,
+					MAC_PLUGIN,
+					REQUIRE_IOSTREAM,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Autodesk/maya2013/devkit/include/maya,
+					/Applications/Autodesk/maya2013/devkit/include,
+				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = /Applications/Autodesk/maya2013/devkit/include/maya;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Autodesk/maya2013/devkit/include/maya /Applications/Autodesk/maya2013/devkit/include";
+			};
+			name = Release;
+		};
+		30EA215817AED0DA00CB48D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = /Applications/Autodesk/maya2013/Maya.app/Contents/MacOS;
+				OTHER_LDFLAGS = (
+					"-lFoundation",
+					"-lOpenMaya",
+					"-Wl",
+					"-lFoundation",
+					"-lOpenMaya",
+					"-lAnimEngine",
+					"-lOpenMayaAnim",
+					"-lOpenMayaRender",
+					"-executable_path,/Applications/Autodesk/maya2013/Maya.app/Contents/MacOS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30EA215917AED0DA00CB48D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = /Applications/Autodesk/maya2013/Maya.app/Contents/MacOS;
+				OTHER_LDFLAGS = (
+					"-lFoundation",
+					"-lOpenMaya",
+					"-Wl",
+					"-lFoundation",
+					"-lOpenMaya",
+					"-lAnimEngine",
+					"-lOpenMayaAnim",
+					"-lOpenMayaRender",
+					"-executable_path,/Applications/Autodesk/maya2013/Maya.app/Contents/MacOS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30EA214917AED0DA00CB48D9 /* Build configuration list for PBXProject "MayaExporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EA215517AED0DA00CB48D9 /* Debug */,
+				30EA215617AED0DA00CB48D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30EA215717AED0DA00CB48D9 /* Build configuration list for PBXNativeTarget "MayaExporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EA215817AED0DA00CB48D9 /* Debug */,
+				30EA215917AED0DA00CB48D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30EA214617AED0DA00CB48D9 /* Project object */;
+}
