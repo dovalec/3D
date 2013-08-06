@@ -14,7 +14,7 @@ Loader::~Loader(void)
 
 bool Loader::OpenFile(const char * pFileName)
 {
-	//LOGI("Openning file: %s",pFileName);
+	LOGI("Openning file: %s",pFileName);
 	FILE* pFile = fopen(pFileName, "rb");
 	
 	if (pFile == NULL)

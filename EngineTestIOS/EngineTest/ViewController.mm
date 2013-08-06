@@ -127,12 +127,13 @@ void SoftStop()
 {
     [super viewDidLoad];
     
-   
     GlobalSys::Create();
     GlobalHeap::Create();
     
     Shell * pShell = Shell::GetShell();
-    pShell->SetReadPath("shaders");
+    //pShell->SetReadPath("shaders/");
+    
+    [self setResourcePath];
     
     ShadersManager & rShadersManager = ShadersManager::GetShadersManager();
     
@@ -149,6 +150,18 @@ void SoftStop()
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
     [self setupGL];
+}
+
+- (void)setResourcePath
+{
+   
+    NSString  * resourceDirectory = [[NSBundle mainBundle] resourcePath];
+    resourceDirectory = [ resourceDirectory stringByAppendingString:@"/"];
+    
+    const char *cfilename=[resourceDirectory UTF8String];
+    
+    Shell * pShell = Shell::GetShell();
+    pShell->SetReadPath(cfilename);
 }
 
 - (void)didReceiveMemoryWarning

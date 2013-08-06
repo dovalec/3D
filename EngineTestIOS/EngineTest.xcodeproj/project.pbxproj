@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		300FDCFD17B1315000F05A7A /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300FDCFA17B1312C00F05A7A /* libOGLES2Tools.a */; };
+		300FDCFE17B1324300F05A7A /* EnvMap.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35917B10FE9006346C1 /* EnvMap.fs */; };
+		300FDCFF17B1324300F05A7A /* EnvMap.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35A17B10FE9006346C1 /* EnvMap.vs */; };
+		300FDD0017B1324300F05A7A /* NoLight.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35B17B10FE9006346C1 /* NoLight.fs */; };
+		300FDD0117B1324300F05A7A /* NoLight.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35C17B10FE9006346C1 /* NoLight.vs */; };
+		300FDD0217B1324300F05A7A /* WithLight.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35D17B10FE9006346C1 /* WithLight.fs */; };
+		300FDD0317B1324300F05A7A /* WithLight.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35E17B10FEA006346C1 /* WithLight.vs */; };
+		300FDD0417B1324300F05A7A /* WithLightAndSkin.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF35F17B10FEA006346C1 /* WithLightAndSkin.fs */; };
+		300FDD0517B1324300F05A7A /* WithLightAndSkin.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36017B10FEA006346C1 /* WithLightAndSkin.vs */; };
+		300FDD0617B1324300F05A7A /* WithLightPhong.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36117B10FEA006346C1 /* WithLightPhong.fs */; };
+		300FDD0717B1324300F05A7A /* WithLightPhong.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36217B10FEA006346C1 /* WithLightPhong.vs */; };
+		300FDD0817B1324300F05A7A /* WithSkin.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36317B10FEA006346C1 /* WithSkin.fs */; };
+		300FDD0917B1324300F05A7A /* WithSkin.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36417B10FEA006346C1 /* WithSkin.vs */; };
+		300FDD0A17B1324300F05A7A /* WithTwoLights.fs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36517B10FEA006346C1 /* WithTwoLights.fs */; };
+		300FDD0B17B1324300F05A7A /* WithTwoLights.vs in Resources */ = {isa = PBXBuildFile; fileRef = 305CF36617B10FEA006346C1 /* WithTwoLights.vs */; };
 		303AEC3917AF7FFB0023B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3817AF7FFB0023B060 /* UIKit.framework */; };
 		303AEC3B17AF7FFB0023B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3A17AF7FFB0023B060 /* Foundation.framework */; };
 		303AEC3D17AF7FFB0023B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AEC3C17AF7FFB0023B060 /* CoreGraphics.framework */; };
@@ -309,6 +323,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300FDCFE17B1324300F05A7A /* EnvMap.fs in Resources */,
+				300FDCFF17B1324300F05A7A /* EnvMap.vs in Resources */,
+				300FDD0017B1324300F05A7A /* NoLight.fs in Resources */,
+				300FDD0117B1324300F05A7A /* NoLight.vs in Resources */,
+				300FDD0217B1324300F05A7A /* WithLight.fs in Resources */,
+				300FDD0317B1324300F05A7A /* WithLight.vs in Resources */,
+				300FDD0417B1324300F05A7A /* WithLightAndSkin.fs in Resources */,
+				300FDD0517B1324300F05A7A /* WithLightAndSkin.vs in Resources */,
+				300FDD0617B1324300F05A7A /* WithLightPhong.fs in Resources */,
+				300FDD0717B1324300F05A7A /* WithLightPhong.vs in Resources */,
+				300FDD0817B1324300F05A7A /* WithSkin.fs in Resources */,
+				300FDD0917B1324300F05A7A /* WithSkin.vs in Resources */,
+				300FDD0A17B1324300F05A7A /* WithTwoLights.fs in Resources */,
+				300FDD0B17B1324300F05A7A /* WithTwoLights.vs in Resources */,
 				303AEC4717AF7FFB0023B060 /* InfoPlist.strings in Resources */,
 				303AEC4F17AF7FFB0023B060 /* Default.png in Resources */,
 				303AEC5117AF7FFB0023B060 /* Default@2x.png in Resources */,
